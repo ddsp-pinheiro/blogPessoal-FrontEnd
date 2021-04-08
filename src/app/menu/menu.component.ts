@@ -1,5 +1,3 @@
-
-import { AuthService } from './../service/auth.service';
 import { Router } from '@angular/router';
 import { environment } from './../../environments/environment.prod';
 import { Component, OnInit } from '@angular/core';
@@ -16,8 +14,7 @@ export class MenuComponent implements OnInit {
   id = environment.id
 
   constructor(
-    private router: Router,
-    public auth: AuthService
+    private router: Router
   ) { }
 
   ngOnInit(){
